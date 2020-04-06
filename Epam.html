@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Epam Assignment</title>
+    <script src="https://kit.fontawesome.com/7a6452b04d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <style>
+      body{
+        border:3px solid white;
+        width:400px;
+        box-shadow:2px 3px 2px 0px black;
+        margin:auto; 
+        scroll-behaviour:smooth;
+        margin-top:20px;
+        margin-bottom:20px;
+      }
+      #box{
+        width:400px;
+        height:620px;
+        border-radius:8px; 
+      }
+      
+      #sign{
+        width:375px;
+        height:25px;
+        padding:12px;
+        border-top-right-radius:8px;
+        border-top-left-radius:8px;
+        border:1px solid #aaa;
+        text-align:center;
+        background-color:#5DADEC;
+        color:white;
+        font-size:20px;
+      }
+      #cap{
+        float:left;
+      } 
+      #cross{
+        float:right;
+      }
+      #email{
+        margin-top:25px;
+        margin-left:10px; 
+      }
+      #inmail,#inpswd,#in,#elog,#glog,#flog{
+        border-radius:4px;
+        padding:12px;
+        outline:none;
+      }
+      #inmail,#inpswd{
+        width:350px;
+        margin-bottom:20px;
+      }
+      #email i,#pswd i{
+        float:right;
+        margin-top:10px;
+        margin-left:-40px;
+        position:absolute;
+        color:#aaa;
+        font-size:20px;
+        /*   z-index:1 */
+      }
+      #pswd{
+        margin-left:10px;
+      }
+      #in,#glog,#elog,#flog{
+        width:380px; 
+        color:white;
+        margin-left:10px;
+        border-radius:12px;
+      }
+      #in{
+        background-color:#5DADEC;
+        padding:12px;
+      }
+      #fpswd{
+        margin-left:10px;
+      }
+      #reg{
+        margin-left:180px;
+      }
+      #sp{
+        display:flex;
+      }
+      #elog{
+        background-color:#B0BF1A;
+        margin-top:40px;
+        font-size:18px;
+        padding:12px;
+      }
+      #glog{
+        background-color:#D3212D;
+        margin-top:10px;
+        font-size:25px;
+        padding:10px;
+        font-family:'Gotu', sans-serif;
+      } 
+      #flog{
+        background-color:#2A52BE;	
+        margin-top:15px;
+        font-size:20px;
+        padding:12px;
+      }
+      h3{
+        font-family: sans-serif;
+        text-align: center;
+        max-width: 350px;
+        position:relative;
+        color:#aaa;
+        margin-left:20px;
+      }
+      h3:before{
+        content: "";
+        display:block;
+        width: 120px;
+        height:2px;
+        background: #aaa;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        z-index: -2;
+      }
+      h3:after{
+        content: "";
+        display:block;
+        width: 120px;
+        height:2px;
+        background: #aaa;
+        position: absolute;
+        right:0;
+        top: 50%;
+        z-index: -2;
+      }
+      span{
+        background: #fff
+      }
+    </style>
+    
+    <form id=box>
+      <div id=sign>
+        <i id=cap class="fas fa-graduation-cap" ></i>
+        <b>Sign in</b>
+        <i id=cross class="far fa-times-circle"></i>
+      </div>
+      <div id=email>
+        <input id=inmail type='email' name='email' placeholder='mail@example.com' required/> 
+        <i id=envlop class="fas fa-envelope"></i>
+      </div>
+      <div id=pswd>
+        <input id=inpswd type='password' name='password' placeholder='password' required/> 
+        <i class="fas fa-unlock-alt"></i>
+      </div>
+      <button id=in><b>SIGN IN</b></button>
+      <span id=sp>
+        <p id=fpswd>Forgot your password?</p>
+        <p id=reg>Register</p>
+      </span>
+      <h3>OR</h3> 
+      <button id=flog><i class="fa fa-facebook fa-fw"></i></button>
+      <button id=glog><b>g</b></button>
+      <button id=elog><i class="fas fa-chevron-left"></i><b>   EPAM LOGIN   </b><i class="fas fa-chevron-right"></i></button>
+    </form>
+  </body>
+</html>
